@@ -8,7 +8,6 @@ const path = require('path');
 const http = require('http');
 
 const agent = require('docker-ssh-http-agent')({
-  protocol: 'ssh',
   host: '192.168.1.1',
   port: 22,
   username: 'root',
@@ -34,7 +33,6 @@ const path = require('path');
 const axios = require('axios');
 
 const agent = require('docker-ssh-http-agent')({
-  protocol: 'ssh',
   host: '192.168.1.1',
   port: 22,
   username: 'root',
