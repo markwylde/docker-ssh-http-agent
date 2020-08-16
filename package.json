@@ -16,5 +16,8 @@
     "url": "https://github.com/markwylde/docker-ssh-http-agent/issues"
   },
   "homepage": "https://github.com/markwylde/docker-ssh-http-agent#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "ssh2": "^0.8.9"
+  }
 }
