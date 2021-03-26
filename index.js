@@ -31,6 +31,7 @@ function createConnection (client, agent, options) {
 function dockerSshHttpAgent (options) {
   const client = new Client();
   const agent = new http.Agent();
+  agent.client = client;
   agent.createConnection = createConnection(client, agent, options);
   return agent;
 }
